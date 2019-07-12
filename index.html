@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!--
+Project Name: Bus App
+Team Members: Katrina Florendo, Laura Futamura, Brianna Yao
+Date: 6/11/19
+Task Description: Contains home screen elements (app title, buttons linked to admin, student, and driver logins)
+-->
+    <head>
+        <link rel="stylesheet" href="index-style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>BusApp</title>
+        
+    </head>
+    <body>
+        <div id="loading-page" class="text-center">
+            <div class="row">
+                <h1 class="title-text animated fadeInLeft"><div class="white-title">bus</div><div class="gray-title">app</div></h1>
+            </div>
+
+            <div class="row" style="display: inline-block;">
+
+                <div class="btn-box">
+                    <a href="./login_files/admin-login-process.php"><i class="material-icons icon-button">person</i></a>
+                    <h4 id="btn-text">admin</h4>
+                </div>
+                <div class="btn-box">
+                    <a href="./login_files/student-login-process.php"><i class="material-icons icon-button">school</i></a>
+                    <h4 id="btn-text">student</h4>
+                </div>
+                <div class="btn-box">
+                    <a href="./login_files/driver-login-process.php"><i class="material-icons icon-button">directions_bus</i></a>
+                    <h4 id="btn-text">driver</h4>
+                </div>
+                   <!--  <button type="button" id="admin-btn" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="admin"><i class="material-icons icon-button">person</i></button>
+                    <button type="button" id="student-btn" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="student"><i class="material-icons icon-button">school</i></button>
+                    <button type="button" id="driver-btn" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="driver"><i class="material-icons icon-button">directions_bus</i></button> -->
+            </div>
+        </div>
+    </body>
+</html>

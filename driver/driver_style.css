@@ -1,0 +1,97 @@
+/*
+Project Name: Bus App
+Team Members: Katrina Florendo, Laura Futamura, Brianna Yao
+Date: 6/11/19
+Task Description: Format driver.php
+*/
+
+/* The overlay of the add, so it looks like it is above others */
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+/* The background of the popup is transparent */
+#add-pop-up #background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+/* The add popup has a slight border, a fixed height, and a fixed location with a drop shadow */
+#pop-up-box{
+    border:2px solid white;
+    position: absolute;
+    height: 560px;
+    width: 500px;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    border-radius: 5px;
+    background: #414244;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* The title of the add box has a certain size and font and spacing */
+#pop-up-box h1{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+}
+/* Any descriptive text has a left and right margin, with a font size */
+#pop-up-box p{
+    font-size: 12px;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+/* Sets settings for the text input fields in the Add Clothing pop up screen */
+#pop-up-box input[type='text']{
+    margin-left: 5%;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0);
+    width: 90%;
+    height: 30px;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+}
+
+/* Sets settings for the add image input field in the Add Clothing pop up screen */
+#pop-up-box #add-image{
+    margin-left: 25px;
+    padding-bottom: 20px;
+}
+
+/* Sets settings for the "Add" button in the Add Clothing pop up screen */
+#pop-up-box #add-button{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    margin: 0px 200px;
+    margin-bottom: 20px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Inverts colors of "Add" button when cursor hovers above it */
+#pop-up-box #add-button:hover{
+    background: white;
+    color: black;
